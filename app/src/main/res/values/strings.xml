@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PicToPic</string>
+    <string name="log_in">Login Attività</string>
+    <string name="register">Registra Attività</string>
+    <string name="scatta_foto">Scatta una foto</string>
+    <string name="scegli_foto">Scegli una foto</string>
+    <string name="welcome">Benvenuto in Conned</string>
+    <string name="welcomeMessage">La sicurezza di tutti è il nostro obiettivo</string>
+    <string name="annull">Annulla</string>
+    <string name="title_activity_door">DoorActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_register_client">RegisterClient</string>
+</resources>
