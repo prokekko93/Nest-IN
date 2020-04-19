@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TableRow
         android:layout_margin="10dp"
@@ -45,7 +46,11 @@
             android:layout_height="wrap_content"
             android:text="Email"
             android:textSize="18sp"/>
-
+    </TableRow>
+    <TableRow
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <EditText
             android:id="@+id/editText"
             android:layout_width="wrap_content"
@@ -64,7 +69,11 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:text="Password" />
-
+    </TableRow>
+    <TableRow
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_margin="10dp">
         <EditText
             android:id="@+id/editText2"
             android:layout_width="match_parent"
@@ -75,7 +84,7 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center">
 
         <Button
@@ -88,14 +97,14 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center">
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register" />
     </TableRow>
 
-</TableLayout>
+</LinearLayout>

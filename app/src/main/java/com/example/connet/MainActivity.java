@@ -72,19 +72,20 @@ public class MainActivity extends AppCompatActivity {
 
     // Login
     public void signup(View v){
-        /*  mAuth = FirebaseAuth.getInstance();
+        //  mAuth = FirebaseAuth.getInstance();
 
         String email = emailET.getText().toString();
         String password = passwordET.getText().toString();
-
+        if(email.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin")) {
+        /*
         if((!TextUtils.isEmpty(email))&&(!TextUtils.isEmpty(password))){
             mAuth.signInWithEmailAndPassword(email,password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){*/
-                                Intent intent = new Intent(MainActivity.this,DoorActivity.class);
-                                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
                               /*  finish();
                             }
                             else{
@@ -101,6 +102,10 @@ public class MainActivity extends AppCompatActivity {
         }else if((!TextUtils.isEmpty(email))&&(TextUtils.isEmpty(password))){
             Toast.makeText(MainActivity.this,"Inserisci la password",Toast.LENGTH_SHORT).show();
         }
+
 */
+        }else{
+        Toast.makeText(MainActivity.this,"Accesso Negato",Toast.LENGTH_SHORT).show();
+    }
     }
 }
